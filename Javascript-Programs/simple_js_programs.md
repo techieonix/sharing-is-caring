@@ -1,1 +1,44 @@
 # Small Programs to Practice Javascript
+
+- **Basic Calculator (console-based)**: Create a calculator that can perform operations like addition, subtraction, multiplication, and division using console input and output.
+- **Temperature Converter**: Write a program to convert temperatures between Fahrenheit and Celsius using console input and output.
+- **Length Converter**: Write a program to convert lengths from meters to feet and vice versa using console input and output.
+- **Simple Quiz (console-based)**: Create a simple quiz with multiple-choice questions and calculate the final score using console input and output.
+- **Days Between Two Dates**: Write a program to calculate the number of days between two dates.
+- **Password Generator**: Write a program to generate a password of a given length.
+- **Text-based Adventure Game (console-based)**: Create a simple text-based adventure game with different scenarios.
+- **Simple Interest Calculator**: Write a program to calculate simple interest for a given principal amount, rate of interest, and time.
+- **Compound Interest Calculator**: Write a program to calculate compound interest.
+- **Palindrome Checker**: Write a program to check if a word or phrase is a palindrome.
+- **Anagram Checker**: Write a program to check if two words or phrases are anagrams of each other.
+- **Vowel Counter**: Write a program to count the number of vowels in a string.
+- **Word Frequency Counter**: Write a program to count the frequency of each word in a string.
+- **Random Number Generator**: Write a program to generate a random number between a range.
+- **Prime Number Checker**: Write a program to check if a number is prime or not.
+- **Factorial Calculator**: Write a program to calculate the factorial of a number.
+- **Fibonacci Series Generator**: Write a program to generate the Fibonacci series up to 'n' terms.
+- **Array Sorter**: Write a program to sort an array of numbers in ascending or descending order.
+- **Duplicate Remover**: Write a program to remove duplicate elements from an array.
+- **Number Swapper**: Write a program to swap the values of two numbers without using a temporary variable.
+- **Odd or Even**: Write a program that checks whether a number is odd or even.
+- **Multiplication Table**: Write a program that prints the multiplication table of a number up to 10.
+- **Sum of Natural Numbers**: Write a program that calculates the sum of natural numbers up to n.
+- **Greatest Common Divisor (GCD)**: Write a program to find the GCD of two numbers.
+- **Least Common Multiple (LCM)**: Write a program to find the LCM of two numbers.
+- **Reverse Number**: Write a program to reverse a given number.
+- **Decimal to Binary**: Write a program to convert a decimal number to binary.
+- **Binary to Decimal**: Write a program to convert a binary number to decimal.
+- **Armstrong Number Checker**: Write a program that checks whether a number is an Armstrong number or not.
+- **Perfect Number Checker**: Write a program that checks whether a number is perfect or not.
+- **Leap Year Checker**: Write a program to check whether a year is a leap year or not.
+- **Number Triangle**: Write a program to print a number triangle.
+- **Star Pattern**: Write a program to print a star pattern.
+- **Alphabet Checker**: Write a program to check whether a character is an alphabet or not.
+- **Alphabet Case Changer**: Write a program to change the case of an alphabet.
+- **String Length Calculator**: Write a program to calculate the length of a string.
+- **Word Counter**: Write a program to count the number of words in a sentence.
+- **Area of Circle**: Write a program to calculate the area of a circle.
+- **Area of Rectangle**: Write a program to calculate the area of a rectangle.
+- **Square Checker**: Write a program to check whether a number is a perfect square or not.
+
+> Note: Please note that these programs are designed to be console-based and do not require knowledge of DOM manipulation. They are also designed to be solved without using "arrow functions", "scope of variables", "object methods", or understanding of the "this" keyword.
