@@ -1,1 +1,22 @@
 # Small Programs to Practice Typescript
+
+- **Hello World: Write a program that prints 'Hello, World!' to the console.
+- **Sum of Two Numbers: Write a function that returns the sum of two numbers.
+- **Factorial of a Number: Write a function that calculates the factorial of a number.
+- **Fibonacci Series: Write a function to generate the Fibonacci series up to 'n' terms.
+- **Prime Number Checker: Write a function that checks if a number is prime or not.
+- **Palindrome Checker: Write a function that checks if a string is a palindrome or not.
+- **Reverse a String: Write a function that reverses a string.
+- **Sort an Array: Write a function to sort an array of numbers in ascending order.
+- **Find Maximum and Minimum: Write a function to find the maximum and minimum numbers in an array.
+- **Count Vowels: Write a function to count the number of vowels in a string.
+- **Convert Celsius to Fahrenheit: Write a function to convert a temperature from Celsius to Fahrenheit.
+- **Calculate Area of Circle: Write a function to calculate the area of a circle.
+- **Calculate Area of Rectangle: Write a function to calculate the area of a rectangle.
+- **Swap Two Numbers: Write a function that swaps the values of two numbers without using a third variable.
+- **Odd or Even: Write a function that checks whether a number is odd or even.
+- **Multiplication Table: Write a function that prints the multiplication table of a number up to 10.
+- **Leap Year Checker: Write a function to check whether a year is a leap year or not.
+- **Convert Decimal to Binary: Write a function to convert a decimal number to binary.
+- **Convert Binary to Decimal: Write a function to convert a binary number to decimal.
+- **Greatest Common Divisor (GCD): Write a function to find the GCD of two numbers.
