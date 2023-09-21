@@ -1,8 +1,19 @@
-var p = prompt("Enter Principal Amount ")
-var r = prompt("Enter rate of interest per year")
-var t = prompt("Enter time period (in years)")
+console.log("Enter Principal Amount");
+var p = 5000
+console.log(p);
+console.log("");
+
+console.log("Enter rate of interest per year");
+var r = 2
+console.log(r);
+console.log("");
+
+console.log("Enter time period (in years)");
+var t = 3
+console.log(t);
+console.log("");
 
 var i = (p * r * t) / 100
 
-console.log("Your value after simple interest : " + i);
-console.log("Your simple interest : " + (i - p))
+console.log("Your value after simple interest : " + (p + i));
+console.log("Your simple interest : " + i)

@@ -1,4 +1,9 @@
-let num = prompt("Enter number")
+console.log("Enter number");
+let num = 45
+console.log(num);
+console.log("");
+
+
 let number = num
 let opposite = ""
 let binary = ""
