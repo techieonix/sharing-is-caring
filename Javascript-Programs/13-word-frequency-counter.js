@@ -14,3 +14,4 @@ for (let i = 0; i < word.length; i++) {
     word[i] == letter ? countLetter++ : null
 }
 console.log("The letter count in the given word is : " + countLetter);
+
