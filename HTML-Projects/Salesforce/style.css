@@ -1,0 +1,851 @@
+body {
+    font-family: sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+a,
+button,
+img,
+li {
+    cursor: pointer;
+}
+
+.navbar {
+    display: flex;
+    height: 6rem;
+    padding: 0.5rem 2.5rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu {
+    display: none;
+}
+
+.logonav {
+    display: flex;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.nav {
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: #032D60;
+    font-weight: bold;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.search {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.free {
+    display: flex;
+    padding: 0.25rem 0.75rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid #2E844A;
+    border-radius: 0.25rem;
+    background: #2E844A;
+    color: #FFFFFF;
+    flex-shrink: 0;
+}
+
+header {
+    display: flex;
+    padding: 1rem 1.25rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    background: #032D60;
+}
+
+header img {
+    width: 5rem;
+    height: 1.5rem;
+}
+
+header p {
+    color: #FFF;
+    font-weight: 700;
+    line-height: 1.5rem;
+    text-transform: capitalize;
+}
+
+header a {
+    color: #FFF;
+    font-weight: 700;
+    line-height: 1.5rem;
+    text-decoration-line: underline;
+}
+
+.businessgrow {
+    display: flex;
+    min-width: 20.4rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 1.5rem;
+    align-self: stretch;
+    padding: 2.5rem 5rem 4.4rem 5rem;
+}
+
+.desc {
+    display: block;
+    min-width: 20.4rem;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 2.5rem;
+    flex: 1 0 0;
+}
+
+.desc h2 {
+    color: #032D60;
+    font-size: 3.5rem;
+    font-weight: 700;
+    line-height: 4rem;
+    width: 39.2rem;
+    height: 8rem;
+}
+
+.desc p {
+    color: #181818;
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    width: 39.2rem;
+    height: 6rem;
+    margin-top: 1.5rem;
+}
+
+.btns {
+    display: flex;
+    min-width: 20.4rem;
+    align-items: center;
+    align-content: center;
+    padding-top: 2.5rem;
+    gap: 1.5rem;
+}
+
+.more {
+    padding: 0.75rem 2rem;
+    border-radius: 0.25rem;
+    border: #0176D3;
+    background: #0176D3;
+    color: #FFF;
+    font-weight: 600;
+    line-height: 1.75rem;
+    text-transform: capitalize;
+    display: flex;
+    flex-shrink: 0;
+}
+
+.demo {
+    padding: 0.75rem 2rem;
+    border-radius: 0.25rem;
+    border: 1px solid #0176D3;
+    background: #FFF;
+    color: #0176D3;
+    font-weight: 600;
+    line-height: 1.75rem;
+    text-transform: capitalize;
+    display: flex;
+    flex-shrink: 0;
+}
+
+.bimg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    flex: 1 0 0;
+}
+
+.business img {
+    align-items: center;
+    width: 20.3rem;
+    height: 20.3rem;
+}
+
+.salesforceproducts {
+    display: flex;
+    padding: 1.5rem 5rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    height: 21.9rem;
+}
+
+.salesforceproducts h3 {
+    color: #032D60;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 2.5rem;
+    letter-spacing: -0.02rem;
+}
+
+.servicegrid {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+}
+
+.services {
+    min-width: 17.9rem;
+    flex-direction: column;
+    align-items: flex-start;
+    box-shadow: 0 0 0.9rem 0 rgba(0, 0, 0, 0.15);
+}
+
+.servicedesc {
+    display: flex;
+    padding: 2rem;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.servicedesc h5 {
+    color: #032D60;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.6rem;
+}
+
+.servicedesc p {
+    color: #032D60;
+    line-height: 1.5rem;
+}
+
+.servicedesc a {
+    color: #032D60;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.5rem;
+    text-decoration-line: underline;
+}
+
+.salesforceproducts button {
+    padding: 0.75rem 2rem;
+    border-radius: 0.25rem;
+    border: 1px solid #0176D3;
+    background: #FFF;
+    color: #0176D3;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.75rem;
+    text-transform: capitalize;
+}
+
+.bottomimg {
+    width: 100%;
+}
+
+.about {
+    display: flex;
+    padding: 1.5rem 0 4rem 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.aboutdesc {
+    display: flex;
+    padding: 0 15.6rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.aboutdesc h1 {
+    color: #032D60;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 3.5rem;
+    margin-bottom: 0;
+}
+
+.aboutdesc p {
+    width: 51rem;
+    color: #181818;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.75rem;
+    text-transform: capitalize;
+    margin: 0;
+}
+
+.aboutbtns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.learn {
+    display: flex;
+    padding: 1.5rem 5rem 4rem 5rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.learndesc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.learndesc h2 {
+    color: #032D60;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+}
+
+.learndesc p {
+    width: 54rem;
+    height: 3rem;
+    color: #181818;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 1.5rem;
+    margin: 0;
+    padding-bottom: 0;
+}
+
+.learngrid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-top: 0;
+}
+
+.learnservice {
+    display: flex;
+    width: 25rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.learnimg img {
+    width: 7.5rem;
+    height: 7.5rem;
+}
+
+.learnservicedesc {
+    display: flex;
+    padding: 0 2rem 2rem 2rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.5rem;
+    margin-top: 1.5rem;
+}
+
+.learnservicedesc button {
+    display: flex;
+    padding: 0.3rem 0.6rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 1.6rem;
+    border: 1px solid #0176D3;
+    background: #0176D3;
+    color: #FFF;
+}
+
+.learnservicedesc h6 {
+    color: #032D60;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.6rem;
+    margin: 0.6rem 0;
+}
+
+.learnservicedesc p {
+    color: #032D60;
+}
+
+.learnservicedesc a {
+    color: #032D60;
+    font-weight: 700;
+    text-decoration-line: underline;
+}
+
+.growbusiness {
+    display: flex;
+    padding: 1.5rem 0 7.5rem 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+}
+
+.growbusinessdesc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.growbusinessdesc h2 {
+    width: 839px;
+    color: #032D60;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+    margin-top: 0;
+    margin-bottom: 2.5rem;
+}
+
+.logos {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 1rem;
+    padding-top: 2.5rem;
+}
+
+.boyce {
+    grid-column: 1/span 3;
+    width: calc(100% - 2.25rem) !important;
+    justify-content: flex-end !important;
+}
+
+.logos div {
+    display: flex;
+    width: 12.5rem;
+    height: 6.25rem;
+    min-width: 9rem;
+    padding: 0.9rem 1.2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.logos div img {
+    width: 8.5rem;
+    height: 3.4rem;
+}
+
+.bottomimg2 {
+    width: 100%;
+}
+
+.trysales {
+    display: flex;
+    padding: 5.5rem 0 4rem 0;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 7.9rem;
+}
+
+.trydesc {
+    display: flex;
+    width: 32.75rem;
+    padding: 2rem 1.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.5rem;
+}
+
+.trydesc h2 {
+    color: #032D60;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 3rem;
+}
+
+.faqs {
+    display: flex;
+    padding: 5rem;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 2.25rem;
+    flex: 1 0 0;
+}
+
+.frame {
+    width: 5.75rem;
+    height: 4rem;
+}
+
+.linkicon {
+    display: flex;
+    gap: 0.4rem;
+}
+
+.fbliyttw {
+    display: flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+}
+
+.fbimg {
+    width: 0.564rem;
+    height: 1.055rem;
+    position: absolute;
+    left: 0.437rem;
+    top: 0.26rem;
+    color: #FFF;
+}
+
+.instagram {
+    display: flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    position: relative;
+}
+
+.igimg {
+    width: 0.956rem;
+    height: 0.767rem;
+    position: absolute;
+    left: 0.272rem;
+    top: 0.273rem;
+    color: #FFF;
+}
+
+.liimg {
+    width: 0.85rem;
+    height: 0.854rem;
+    position: absolute;
+    left: 0.317rem;
+    top: 0.311rem;
+}
+
+.ytimg {
+    width: 0.922rem;
+    height: 0.653rem;
+    position: absolute;
+    left: 0.29rem;
+    top: 0.421rem;
+}
+
+.twimg {
+    width: 0.928rem;
+    height: 0.754rem;
+    position: absolute;
+    left: 0.3rem;
+    top: 0.385rem;
+}
+
+.links p {
+    color: #000;
+    font-size: 0.75rem;
+    line-height: 0.93rem;
+}
+
+.details {
+    display: flex;
+    width: 52.6rem;
+    gap: 6.75rem;
+}
+
+.sf {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.sf h3 {
+    color: #000;
+    font-size: 0.875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+}
+
+.sfsections {
+    display: flex;
+    padding: 0.5rem;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.sfsections li {
+    font-size: 0.75rem;
+    line-height: 0.93rem;
+    margin: 0.125rem;
+    list-style-type: none;
+}
+
+footer {
+    display: flex;
+    padding: 1.5rem 5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: #032D60;
+}
+
+.portalfree {
+    display: flex;
+    height: 2.5rem;
+    padding: 0.375rem 1.125rem 0.375rem 1.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border-radius: 0.25rem;
+    border: 1px solid #FFF;
+    background-color: #032D60;
+    color: #FFF;
+    flex-shrink: 0;
+}
+
+.portal {
+    width: 1rem;
+    height: 1rem;
+}
+
+.uparr {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+
+.copyright {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.75rem;
+    flex: 1 0 0;
+}
+
+.copyright p {
+    align-self: stretch;
+    flex: 1 0 0;
+    color: #FFF;
+    font-size: 0.7rem;
+    line-height: 0.875rem;
+}
+
+.footerlinks {
+    display: flex;
+    gap: 1.5rem;
+    align-self: stretch;
+}
+
+.footerlinks a {
+    display: flex;
+    gap: 0.5rem;
+    color: #0176D3;
+    font-size: 0.7rem;
+    font-style: normal;
+    line-height: 0.875rem;
+    text-decoration-line: underline;
+    text-transform: capitalize;
+}
+
+.chat {
+    display: flex;
+    height: 2rem;
+    padding: 0.375rem 0.75rem 0.375rem 0.375rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    border: 1px solid #0176D3;
+    border-radius: 62.43rem;
+    background: #0176D3;
+    color: #FFF;
+    flex-shrink: 0;
+}
+
+.chatimg {
+    display: flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        padding: 0.5rem 1.5rem;
+        height: 3.5rem;
+        gap: 1rem;
+    }
+
+    .nav {
+        display: none;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1rem 1.5rem;
+    }
+
+    .businessgrow {
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 2.5rem 5.625rem 0 5.625rem;
+        gap: 2.5rem;
+    }
+
+    .bottomimg {
+        padding-top: 37.5rem;
+    }
+
+    .about {
+        padding: 1.5rem 18.75rem 4rem 18.75rem;
+    }
+
+    .salesforceproducts {
+        margin: 1.5rem;
+    }
+
+    .servicegrid {
+        grid-template-columns: auto auto;
+        gap: 1.25rem;
+    }
+
+    .learn {
+        padding: 1.5rem 1.5rem 4rem 1.5rem;
+    }
+
+    .learngrid {
+        grid-template-columns: auto;
+    }
+
+    .learnservice {
+        width: 100%;
+    }
+
+    .trysales {
+        margin: 0 1.5rem;
+        padding: 1.75rem 0 1.75rem 3rem;
+        gap: 1.5rem;
+    }
+
+    .aboutbtns button {
+        flex-shrink: 0;
+    }
+
+    .logos {
+        grid-template-columns: auto auto auto;
+    }
+
+    .boyce {
+        grid-column: 1/span 2;
+        width: calc(100% - 2.25rem) !important;
+        justify-content: center !important;
+    }
+
+    .aboutbtns {
+        flex-direction: column;
+    }
+
+    .img24 {
+        width: 20.44rem;
+        height: 17.42rem;
+    }
+
+    .faqs {
+        display: none;
+    }
+
+    footer {
+        padding: 1.5rem 2.25rem;
+        gap: 2.25rem;
+    }
+
+    .footerlinks {
+        flex-wrap: wrap;
+        flex-shrink: 0;
+        gap: 0.375rem 1.5rem;
+    }
+
+    .chat {
+        display: none;
+    }
+}
+
+@media (max-width: 375px) {
+    .businessgrow {
+        padding: 2.5rem 1.5rem 0 1.5rem;
+    }
+
+    .btns {
+        flex-direction: column;
+    }
+
+    .salesforceproducts {
+        padding: 2rem 2rem 0 2rem;
+        gap: 2.625rem;
+    }
+
+    .servicegrid {
+        grid-template-columns: auto;
+    }
+
+    .bottomimg {
+        padding-top: 106.25rem;
+    }
+
+    .about {
+        padding: 2rem 1.5rem;
+    }
+
+    .learn {
+        padding: 2rem 1.5rem;
+    }
+
+    .growbusiness {
+        padding-top: 2rem;
+    }
+
+    .logos {
+        grid-template-columns: auto auto;
+    }
+
+    .boyce {
+        grid-column: 1/span 1;
+    }
+
+    .trysales {
+        padding: 0px 1.5rem;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
