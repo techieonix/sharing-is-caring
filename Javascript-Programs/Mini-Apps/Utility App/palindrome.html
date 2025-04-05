@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Palindrome</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Palindrome Checker</h1>
+    <form style="margin: 20px;" id="palindrome">
+        <input type="text">
+        <button type="submit" id="check">Check Palindrome</button>
+        <div></div>
+    </form>
+    <button id="home">Go to Homepage</button>
+    <script>
+        let input = document.querySelector('input')
+        let div = document.querySelector('div')
+        let btn = document.getElementById('check')
+        document.getElementById('palindrome').addEventListener('submit', (e) => {
+            e.preventDefault()
+            let left = 0, right = (input.value.length) - 1
+            while (right > left) {
+                if (input.value[left++] != input.value[right--]) {
+                    div.innerHTML = `Not palindrome`
+                    console.log('Not palindrome');
+                    break
+                }
+                else {
+                    div.innerHTML = `Palindrome`
+                    console.log('Palindrome');
+                }
+            }
+            input.value = ''
+        })
+        document.getElementById('home').addEventListener('click', () => {
+            window.location.href = './index.html'
+        })
+    </script>
+</body>
+
+</html>

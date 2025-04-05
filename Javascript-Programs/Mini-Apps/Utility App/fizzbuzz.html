@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fizzbuzz</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Fizzbuzz</h1>
+    <form style="margin: 20px;" id="fizzbuzz">
+        <input type="number">
+        <button type="submit" id="check">Play</button>
+        <div></div>
+        <button id="home">Go to Homepage</button>
+        <script>
+            let input = document.querySelector('input')
+            let div = document.querySelector('div')
+            let btn = document.getElementById('btn')
+            document.getElementById('fizzbuzz').addEventListener('submit', (e) => {
+                e.preventDefault()
+                if (input.value % 3 == 0 && input.value % 5 == 0) div.innerHTML = `Fizzbuzz`
+                else if (input.value % 3 == 0) div.innerHTML = `Fizz`
+                else if (input.value % 5 == 0) div.innerHTML = `Buzz`
+                else div.innerHTML = `Not fizzbuzz`
+                input.value = ''
+            })
+            document.getElementById('home').addEventListener('click', () => {
+            window.location.href = './index.html'
+        })
+        </script>
+</body>
+
+</html>

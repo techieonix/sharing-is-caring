@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitation</title>
+</head>
+
+<body>
+    <h3>Guests List: </h3>
+    <form id="addGuest">
+        <input type="text">
+        <button type="submit" id="btnsubmit">Add Guest</button>
+        <ul style="list-style-type: none;">
+        </ul>
+    </form>
+    <button id="sendinv">Send Invitation</button>
+    <h2 style="text-align: center;">You are invited at xyz event at abc place at this time. Please be punctual.</h2>
+
+    <script>
+        let ul = document.querySelector('ul')
+        let input = document.querySelector('input')
+        let submitbtn = document.getElementById('btnsubmit')
+        let send = document.getElementById('sendinv')
+        document.getElementById('addGuest').addEventListener('submit', (e) => {
+            e.preventDefault()
+            let li = document.createElement('li')
+            li.innerHTML = `${input.value}`
+            ul.appendChild(li)
+            input.value = ''
+        })
+        document.getElementById('sendinv').addEventListener('click', (e) => {
+            e.preventDefault()
+            console.log(ul.children);
+            for (let i = 0; i < ul.children.length; i++) {
+                console.log('Invitation sent to ' + ul.children[i].innerHTML);
+            }
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./atyle.css">
+</head>
+
+<body style="background-color: black; color: white; text-align: center;">
+    <h1 class="text-5xl mt-20 font-bold">Pricing</h1>
+    <p class="text-gray-500 mt-3 mb-7 px-96 ">You can stay on the $8 plan until you have enough active users to
+        justify managing their data or you start
+        selling things</p>
+    <button class="text-gray-400 bg-gray-500 font-bold text-xs rounded-md p-2"><span
+            class="bg-green-500 text-black rounded p-1 font-bold text-xs">Billed yearly -43%</span> Billed
+        monthly</button>
+    <div class="mt-10 flex flex-row mx-20">
+        <div id="free" class="border border-gray-600 rounded-3xl p-10 mr-5">
+            <h3 class="text-yellow-500">Start here</h3>
+            <h1 class="font-bold text-4xl pt-1">$0</h1>
+            <p class="text-gray-500 pt-1">per month</p>
+            <ul class="space-y-2 p-5">
+                <li>&#10003; Access to all modules</li>
+                <li>&#10003; Build first screen free</li>
+                <li class="text-gray-500">&#10005; Full airtable integration</li>
+                <li class="text-gray-500">&#10005; 1:1 build sessions</li>
+                <li class="text-gray-500">&#10005; Small memberships</li>
+                <li class="text-gray-500">&#10005; Premium support</li>
+                <li class="text-gray-500">&#10005; Connect to Shopify & WooCommerce</li>
+                <li class="text-gray-500">&#10005; Custom admin panel to manage users, data etc</li>
+            </ul>
+            <button class="border border-green-500 rounded-full px-7 py-2 hover:bg-green-500 hover:text-black">Request
+                Access</button>
+            <p class="text-gray-500 pt-2">It's free so why not</p>
+        </div>
+        <div id="start" class="border border-gray-600 rounded-3xl p-10 mr-5">
+            <h3 class="text-green-600">Startup</h3>
+            <h1 class="font-bold text-4xl pt-1">$8</h1>
+            <p class="text-gray-500 pt-1">per month</p>
+            <ul class="space-y-2 p-5">
+                <li>&#10003; Access to all modules</li>
+                <li>&#10003; Build first screen free</li>
+                <li>&#10003; Full airtable integration</li>
+                <li>&#10003; 1:1 build sessions</li>
+                <li>&#10003; Small memberships</li>
+                <li class="text-gray-500">&#10005; Premium support</li>
+                <li class="text-gray-500">&#10005; Connect to Shopify & WooCommerce</li>
+                <li class="text-gray-500">&#10005; Custom admin panel to manage users, data etc</li>
+            </ul>
+            <button class="border border-green-500 rounded-full px-7 py-2 hover:bg-green-500 hover:text-black">Request
+                Access</button>
+            <p class="text-gray-500 pt-2">Save $72 per year</p>
+        </div>
+        <div id="premium" class="border border-gray-600 rounded-3xl p-10">
+            <h3 class="text-blue-500">Growth</h3>
+            <h1 class="font-bold text-4xl pt-1">$79</h1>
+            <p class="text-gray-500 pt-1">per month</p>
+            <ul class="space-y-2 p-5">
+                <li>&#10003; Access to all modules</li>
+                <li>&#10003; Build first screen free</li>
+                <li>&#10003; Full airtable integration</li>
+                <li>&#10003; 1:1 build sessions</li>
+                <li>&#10003; Small memberships</li>
+                <li>&#10003; Premium support</li>
+                <li>&#10003; Connect to Shopify & WooCommerce</li>
+                <li>&#10003; Custom admin panel to manage users, data etc</li>
+            </ul>
+            <button class="border border-green-500 rounded-full px-7 py-2 hover:bg-green-500 hover:text-black">Request
+                Access</button>
+            <p class="text-gray-500 pt-2">Save $480 per year</p>
+        </div>
+    </div>
+    <p class="text-gray-500 pt-28 pb-14 text-xs">There is one time $99 fee to publish your app and/or export source code
+    </p>
+    <div class="px-80 text-left">
+        <h1 class="font-bold text-4xl">Frequently Asked Questions</h1>
+        <h2 class="font-bold pt-10 text-xl">What kind of apps can I build?</h2>
+        <p class="text-gray-500 py-3 pb-7">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi deserunt quod,
+            iste quas placeat sed
+            doloremque quia soluta dolorum quasi obcaecati dolor neque rerum facere culpa sint cupiditate porro magni.
+        </p>
+        <hr style="border: 1px solid rgb(66, 65, 65);">
+        <h2 class="font-bold pt-7 text-xl">What happens to my app if I cancel?</h2>
+        <p class="text-gray-500 py-3 pb-7">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi deserunt quod,
+            iste quas placeat sed
+            doloremque quia soluta dolorum quasi obcaecati dolor neque rerum facere culpa sint cupiditate porro magni.
+        </p>
+        <hr style="border: 1px solid rgb(66, 65, 65);">
+        <h2 class="font-bold pt-7 text-xl">I see there's a fee to publish to the app stores and to export code. why?
+        </h2>
+        <p class="text-gray-500 py-3 pb-7">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi deserunt quod,
+            iste quas placeat sed
+            doloremque quia soluta dolorum quasi obcaecati dolor neque rerum facere culpa sint cupiditate porro magni.
+        </p>
+    </div>
+    <script>
+        let price = document.getElementById('free')
+        price.addEventListener('mouseover', (e) => {
+            price.style.borderColor = "white"
+            price.style.transform = "scale(1.1)"
+        })
+        price.addEventListener('mouseout', (e) => {
+            price.style.borderColor = "gray"
+            price.style.transform = "scale(1)"
+        })
+        let price1 = document.getElementById('start')
+        price1.addEventListener('mouseover', (e) => {
+            price1.style.borderColor = "white"
+            price1.style.transform = "scale(1.1)"
+        })
+        price1.addEventListener('mouseout', (e) => {
+            price1.style.borderColor = "gray"
+            price1.style.transform = "scale(1)"
+        })
+        let price2 = document.getElementById('premium')
+        price2.addEventListener('mouseover', (e) => {
+            price2.style.borderColor = "white"
+            price2.style.transform = "scale(1.1)"
+        })
+        price2.addEventListener('mouseout', (e) => {
+            price2.style.borderColor = "gray"
+            price2.style.transform = "scale(1)"
+        })
+    </script>
+</body>
+
+</html>

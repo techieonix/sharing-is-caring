@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Themes</title>
+    <style>
+        .light-mode {
+            background-color: white;
+            color: black;
+        }
+
+        .dark-mode {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="font-size: 56px;">This project toggles between light mode and dark mode</h1>
+    <button style="background-color: gray; color: navy; padding: 5px 10px;" id="darkMode">Click here to switch
+        theme</button>
+
+    <script>
+        let theme = true
+        document.getElementById('darkMode').addEventListener('click', () => {
+            debugger
+            if (theme == true) {
+                document.querySelector('body').className = 'dark-mode'
+                theme = false
+            }
+            else {
+                document.querySelector('body').className = 'light-mode'
+                theme = true
+            }
+        })
+    </script>
+</body>
+
+</html>

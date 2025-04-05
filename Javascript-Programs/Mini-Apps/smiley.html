@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smiley Selector</title>
+    <style>
+        h2 {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 style="text-align: center;">Smiley Selector</h1>
+        <h2 id="laugh">&#128512;</h2>
+        <h2 id="innocent">&#128519;</h2>
+        <h2 id="food">&#128523;</h2>
+        <h2 id="sad">&#128532;</h2>
+        <h2 id="cat">&#128569;</h2>
+    </div>
+    <script>
+        document.getElementById('laugh').addEventListener('click', () => {
+            alert('I am laughing')
+        })
+        document.getElementById('innocent').addEventListener('click', () => {
+            alert('I am innocent')
+        })
+        document.getElementById('food').addEventListener('click', () => {
+            alert('I am eating delicious food')
+        })
+        document.getElementById('sad').addEventListener('click', () => {
+            alert('I am sad')
+        })
+        document.getElementById('cat').addEventListener('click', () => {
+            alert('I am cat')
+        })
+    </script>
+</body>
+</html>

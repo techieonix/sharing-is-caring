@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vowel</title>
+</head>
+<body>
+    <h1 style="text-align: center;">Vowel Count</h1>
+    <form style="margin: 20px;" id="vowel">
+        <input type="text">
+        <button type="submit" id="check">Check Vowel Count</button>
+        <div></div>
+    </form>
+    <button id="home">Go to Homepage</button>
+    <script>
+        let input = document.querySelector('input')
+        let div = document.querySelector('div')
+        let btn = document.getElementById('btn')
+        document.getElementById('vowel').addEventListener('submit', (e) => {
+            e.preventDefault()
+            let vowels = 0, consonants = 0
+            for (let i = 0; i < input.value.length; i++) {
+                (input.value[i] == 'a' || input.value[i] == 'e' || input.value[i] == 'i' || input.value[i] == 'o' || input.value[i] == 'u') ? vowels++ : consonants++
+            }
+            div.innerHTML = `${input.value} has ${vowels} vowels and ${consonants} consonants.`
+            input.value = ''
+        })
+        document.getElementById('home').addEventListener('click', () => {
+            window.location.href = './index.html'
+        })
+    </script>
+</body>
+</html>

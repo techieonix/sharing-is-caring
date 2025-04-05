@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prime Number</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Prime Number Checker</h1>
+    <form style="margin: 20px;" id="prime">
+        <input type="number">
+        <button type="submit" id="check">Check Prime Number</button>
+        <div></div>
+    </form>
+    <button id="home">Go to Homepage</button>
+    <script>
+        let input = document.querySelector('input')
+        let div = document.querySelector('div')
+        let btn = document.getElementById('check')
+        document.getElementById('prime').addEventListener('submit', (e) => {
+            e.preventDefault()
+            let flag = 0
+            if (input.value == 0 || input.value == 1) flag = 1
+            for (let i = 2; i <= input.value / 2; i++) {
+                if (input.value % i == 0)
+                    flag = 1
+                break
+            }
+            if (flag == 0) div.innerHTML = `Prime Number`
+            else div.innerHTML = `Not a Prime Number`
+            input.value = ''
+        })
+        document.getElementById('home').addEventListener('click', () => {
+            window.location.href = './index.html'
+        })
+    </script>
+</body>
+
+</html>

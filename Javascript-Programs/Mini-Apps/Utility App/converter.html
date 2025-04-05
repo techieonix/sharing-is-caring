@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Converter</title> 
+    <style>
+        form {
+            margin: 20px;
+        }
+        ul {
+            list-style-type: none;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Converter</h1>
+    <form id="form1">
+        <input id="inp1" type="number" placeholder="Enter Celsius Value">
+        <button type="submit" id="ctof">Click to check fahrenheit</button>
+        <div id="div1"></div>
+    </form>
+    <form id="form2">
+        <input id="inp2" type="number" placeholder="Enter cm value">
+        <button type="submit" id="cmtom">Click to check m</button>
+        <div id="div2"></div>
+    </form>
+    <button id="home">Go to Homepage</button>
+    <script>
+        let div1 = document.getElementById('div1')
+        let inp1 = document.getElementById('inp1')
+        let btn1 = document.getElementById('ctof')
+        document.getElementById('form1').addEventListener('submit', (e) => {
+            e.preventDefault()
+            div1.innerHTML = `${(inp1.value * (9 / 5) + 32).toFixed(2)}`
+            inp1.value = ''
+            console.log(Number(div1.innerHTML).toFixed(2));
+        })
+        let div2 = document.getElementById('div2')
+        let inp2 = document.getElementById('inp2')
+        let btn2 = document.getElementById('cmtom')
+        document.getElementById('form2').addEventListener('submit', (e) => {
+            e.preventDefault()
+            div2.innerHTML = `${(inp2.value / 100)}`
+            inp2.value = ''
+            console.log(Number(div2.innerHTML));
+        })
+        document.getElementById('home').addEventListener('click', () => {
+            window.location.href = './index.html'
+        })
+    </script>
+</body>
+
+</html>
