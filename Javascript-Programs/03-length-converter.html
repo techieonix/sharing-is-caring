@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button id="btn1">Convert to Meters</button>
+    <button id="btn2">Convert to Feet</button>
+
+    <script>
+        var meters = document.getElementById("btn1")
+        var feet = document.getElementById("btn2")
+
+        meters.addEventListener("click", function () {
+            let length = prompt("Enter Length in Feet");
+            console.log("Length in Meters");
+            let feetLength = length / 3.281
+            console.log(feetLength);
+        })
+
+        feet.addEventListener("click", function () {
+            let length = prompt("Enter Length in Meters")
+            console.log("Length in Feet");
+            let metersLength = length * 3.281
+            console.log(metersLength);
+        })
+    </script>
+</body>
+
+</html>

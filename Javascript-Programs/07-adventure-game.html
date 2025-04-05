@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let home = true
+        console.log("You wake up in a small, dimly lit room.The room was compressing from every side. There are two doors in front of you. What do you do?");
+        console.log("1) open door1");
+        console.log("2) open door2");
+        let action1 = prompt()
+        console.clear()
+        if (action1 == 1 && home) {
+            console.log(action1 + ": You cautiously open the door1 and find yourself in a mysterious forest");
+        } else if (action1 == 2 && home) {
+            console.log(action1 + ": You cautiously open the door2, there was another room. When you step into that room, it exploded and you bid farewell to life");
+            home = false
+        }
+
+
+
+
+        if (home) {
+            console.log("You are now in the heart of the forest. The path splits into three directions: left, right, and straight ahead. Which way do you go?");
+            console.log("1) left");
+            console.log("2) right");
+            console.log("3) straight ahead");
+            let action2 = prompt()
+            console.clear()
+
+
+            if (action2 == 1 && home) {
+                console.log(action2 + ": You follow the left path and discover a tranquil lake");
+                console.log("By the tranquil lake, you notice a shiny object at the water's edge. It's a magical amulet! What do you do with it?");
+                console.log("1) pick it up");
+                console.log("2) leave it");
+                let tranquilLake = prompt()
+                console.clear()
+                if (tranquilLake == 1 && home) {
+                    console.log("You pick up the amulet, and it begins to glow with an eerie light.");
+                    console.log("Suddenly the light becomes more shiny and exploded and you die");
+                } else if (tranquilLake == 2 && home) {
+                    console.log("You decide to leave the amulet alone and move on.");
+                    console.log("When you turn around, you saw an alligator. It attacked you and sleep you to death.");
+                }
+                home = false
+            } else if (action2 == 2 && home) {
+                console.log(action2 + ": You take the right path and encounter a group of friendly travelers");
+                console.log("The friendly travelers invite you to join them on their journey. They offer you a map with two destinations: a hidden cave or a bustling village. Where do you choose to go?");
+                console.log("1) cave");
+                console.log("2) village");
+                let friendlyTravelers = prompt()
+                console.clear()
+                if (friendlyTravelers == 1 && home) {
+                    console.log("You decide to explore the hidden cave, hoping to find treasure.");
+                    console.log("Inside the cave you find a chest, but there is no treasure inside, there is a viper in it. It bites you and it's venom kills you.");
+                    home = false
+                } else if (friendlyTravelers == 2 && home) {
+                    console.log("You opt to visit the bustling village to seek help and company.");
+                    console.log("In the bustling village, you meet a wise old sage who offers you guidance. He tells you of a mystical portal that can take you home. Do you follow his advice and seek the portal, or continue exploring?");
+                    console.log("1) seek portal");
+                    console.log("2) continue exploring");
+                    let seekPortal = prompt()
+                    console.clear()
+                    if (seekPortal == 1 && home) {
+                        console.log("You follow the sage's advice and embark on a quest to find the portal.");
+                        console.log("You've found the mystical portal! As you step through, you awaken in your own bed, realizing it was all a dream. The adventure may be over, but the memories will last forever.");
+                    } else if (seekPortal == 2 && home) {
+                        console.log("You decide to continue exploring this enchanting world.");
+                        console.log("When you denied that sage, he cursed you that you will never be able to see and hear anymore for the sake of your life");
+                        home = false
+                    }
+                }
+
+            } else if (action2 == 3 && home) {
+                console.log(action2 + ": You continue straight ahead and come across a daek cave");
+                console.log("Inside the dark cave, you find an ancient chest. Do you try to open it with the key you found , or leave it be?");
+                console.log("1) leave chest");
+                console.log("2) open chest");
+                let darkCave = prompt()
+                console.clear()
+                if (darkCave == 1 && home) {
+                    console.log("You decide not to risk it and leave the chest unopened.");
+                    console.log("When you were coming back out the cave, you stepped on secret trap. Suddenly a poisonous arrow strikes at you and you meet your end.");
+                } else if (darkCave == 2 && home) {
+                    console.log("You use the key to open the chest and discover a trove of valuable gems!");
+                    console.log("Along with the chest, there was a map by it, which indicates the way to the town");
+                    console.log("Through that map you goes to your home happily");
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
