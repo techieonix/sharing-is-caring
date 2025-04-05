@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.btn-red{
+  @apply px-4 py-[6px] bg-red-600 text-white font-semibold hover:bg-red-700 transition-colors
+}
